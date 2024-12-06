@@ -12,7 +12,6 @@ black = "^24.10.0"
 pillow = "^11.0.0"
 static = "^1.1.1"
 
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
