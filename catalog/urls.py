@@ -1,8 +1,8 @@
 from django.urls import path
-from newapp.apps import NewappConfig
-from newapp.views import home, contacts
+from catalog.apps import CatalogConfig
+from catalog.views import home, contacts
 
-app_name = NewappConfig.name
+app_name = CatalogConfig.name
 
 urlpatterns = [
     path('home/', home, name='home'),
