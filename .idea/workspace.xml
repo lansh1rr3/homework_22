@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e30b99f9-cc5c-4ad1-b7f5-f5775ad50851" name="Changes" comment="last 2">
-      <change afterPath="$PROJECT_DIR$/catalog/templates/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="e30b99f9-cc5c-4ad1-b7f5-f5775ad50851" name="Changes" comment="html">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733575729874</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=".">
+      <option name="closed" value="true" />
+      <created>1733739048200</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733739048200</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -246,6 +251,8 @@
     <MESSAGE value="lol 8" />
     <MESSAGE value="last 1" />
     <MESSAGE value="last 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="last 2" />
+    <MESSAGE value="." />
+    <MESSAGE value="html" />
+    <option name="LAST_COMMIT_MESSAGE" value="html" />
   </component>
 </project>
