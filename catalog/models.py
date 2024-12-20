@@ -9,26 +9,27 @@ class Product(models.Model):
         help_text="Введите название продукта",
     )
     description = models.TextField(
-        verbose_name="Описание продукта", help_text="Введите описание продукта"
+        verbose_name="Описание продукта",
+        help_text="Введите описание продукта",
     )
     image = models.ImageField(
-        upload_to="catalog/image",
+        upload_to="catalog/image",  # Папка для хранения изображений
         blank=True,
         null=True,
         verbose_name="Фото продукта",
         help_text="Загрузите фото продукта",
     )
     category = models.ForeignKey(
-        "Category",
+        "Category",  # Указание на модель Category
         on_delete=models.CASCADE,
+        related_name="products",  # Обратная связь для категорий
         verbose_name="Категория",
-        help_text="Выберите категорию",
+        help_text="Выберите категорию продукта",
     )
     price = models.IntegerField(
         default=0,
         validators=[MaxValueValidator(10000)],
         verbose_name="Цена за продукт",
-        help_text="Введите цену продукта (макс. 10000)",
     )
     created_at = models.DateField(
         blank=True,
@@ -53,6 +54,8 @@ class Product(models.Model):
 
 
 class Category(models.Model):
+    """Модель для категории продуктов."""
+
     name = models.CharField(
         max_length=100,
         verbose_name="Название категории",
