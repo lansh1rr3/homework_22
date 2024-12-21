@@ -1,9 +1,9 @@
 [tool.poetry]
-name = "homework-22"
+name = "homework-25"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
-readme = "README.md"
+authors = [""]
+readme = ""
 
 [tool.poetry.dependencies]
 python = "^3.12"
