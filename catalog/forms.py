@@ -49,4 +49,3 @@ class ProductModeratorForms(forms.ModelForm):
     class Meta:
         model = Product
         fields = ['description', 'category', 'category', 'price']
-
