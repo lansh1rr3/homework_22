@@ -1,6 +1,8 @@
 from django.db import models
 from django.core.validators import MaxValueValidator
 
+from users.models import User
+
 
 class Product(models.Model):
     name = models.CharField(
@@ -41,11 +43,17 @@ class Product(models.Model):
         verbose_name="Дата последнего изменения",
         help_text="Введите дату последнего изменения",
     )
+    owner = models.ForeignKey(User, verbose_name="Создатель", help_text="Укажите создателя", blank=True, null=True,
+                              on_delete=models.SET_NULL)
 
     class Meta:
         verbose_name = "Продукт"
         verbose_name_plural = "Продукты"
         ordering = ["name", "category"]
+        permissions = [
+            ("can_edit_product", "can edit product"),
+            ("can_edit_description", "can edit description")
+        ]
 
     def __str__(self):
         return self.name

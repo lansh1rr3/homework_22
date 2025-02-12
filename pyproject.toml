@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "homework-25"
+name = "homework_django"
 version = "0.1.0"
 description = ""
 authors = [""]

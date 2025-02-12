@@ -15,7 +15,7 @@ class ProductForm(forms.ModelForm):
         fields = ['name', 'description', 'image', 'category', 'price']
 
     def __init__(self, *args, **kwargs):
-        super(ProductForm, self).__init__(*args, **kwargs)
+        super(ProductForms, self).__init__(*args, **kwargs)
         # Применение классов к каждому полю формы
         for field in self.fields.values():
             field.widget.attrs['class'] = 'form-control'
@@ -43,3 +43,10 @@ class ProductForm(forms.ModelForm):
             raise forms.ValidationError("Цена не может быть отрицательной")
 
         return price
+
+
+class ProductModeratorForms(forms.ModelForm):
+    class Meta:
+        model = Product
+        fields = ['description', 'category', 'category', 'price']
+
